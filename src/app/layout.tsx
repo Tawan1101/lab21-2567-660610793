@@ -38,7 +38,7 @@ export default function RootLayout({
           headers: { Authorization: `Bearer ${token}` },
         });
         $authenStore.set({ token, authenUsername });
-      } catch (err) {
+      } catch (err:any) {
         console.log(err.message);
         isTokenValid = false;
       }
@@ -80,8 +80,8 @@ export default function RootLayout({
               </Title>
               {children}
               <Footer
-                studentId="660610999"
-                fullName="Dome Potikanond"
+                studentId="660610793"
+                fullName="wanchai lungnoeng"
                 year="2024"
               />
             </Container>
